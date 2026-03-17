@@ -39,7 +39,7 @@ mv pd.sh ~/.local/bin
 imposta l'alias
 
 ```bash
-echo "alias pd='~/.local/bin/pd.sh" >> ~/.zshrc
+echo "alias pd='~/.local/bin/pd.sh'" >> ~/.zshrc
 ```
 ## Utilizzo
 quando avviato con "pd" lo script sta in modalita' bestemmie.
