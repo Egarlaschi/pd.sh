@@ -1,28 +1,49 @@
-piccolo script per le bestemmie.
-UTILIZZO:
-pd per eseguire lo script
-per uscire dalla modalita' bestemmie usa ctrl-c o ctrl-d
-in modalita' bestemmie premi spazio o enter per generare un'altra bestemmia
 
-REQUISITI:
-lolcat
+# PD.SH
 
-//per installarlo sui pc della 42 esegui
+script per bestemmiare silenziosamente nei cluster della 42
+
+
+## Requisiti
+necessario lolcat per l'effetto colorato
+sui computer del cluster puoi installarlo con
+```bash
 pip install lolcat
+```
+## Installazione
 
-INSTALLAZIONE:
+scarica la repo
 
-//clona la repo
+```bash
 git clone https://github.com/Egarlaschi/pd.sh.git
+```
 
-//entra nella cartella della repo
+entra nella cartella della repo
+
+```bash
 cd pd.sh
+```    
 
-//imposta lo script come eseguibile
+imposta lo script come eseguibile
+
+```bash
 chmod +x pd.sh
+```
 
-//sposta pd.sh nella cartella degli script
+sposta pd.sh nella cartella degli script
+
+```bash
 mv pd.sh ~/.local/bin
+```
 
-//imposta l'alias
+imposta l'alias
+
+```bash
 echo "alias pd='~/.local/bin/pd.sh" >> ~/.zshrc
+```
+## Utilizzo
+quando avviato con "pd" lo script sta in modalita' bestemmie.
+con SPAZIO e ENTER puoi generare una nuova bestemmia a seconda di quanto
+sei infastidito.
+
+per uscire dal programma, puoi usare CTRL-C
