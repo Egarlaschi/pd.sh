@@ -1,5 +1,5 @@
 #!/bin/bash
-
+trap "tput cnorm; exit" INT TERM EXIT
 #MODIFICA I PATH CORRETTI QUI SOTTO SE NN DOVESSE FUNZIONARE.
 
 eval "$(/nfs/homes/$USER/.local/bin/brew shellenv bash)"
