@@ -1,10 +1,9 @@
 #!/bin/bash
 
 #MODIFICA I PATH CORRETTI QUI SOTTO SE NN DOVESSE FUNZIONARE.
-#DEVI RIMUOVERE I COMMENTI
 
-#eval "$(/nfs/homes/$USER/.local/bin/brew shellenv bash)"
-#LOLCAT="/nfs/homes/$USER/.local/bin/lolcat"
+eval "$(/nfs/homes/$USER/.local/bin/brew shellenv bash)"
+LOLCAT="/nfs/homes/$USER/.local/bin/lolcat"
 
 ripristina_terminale() {
     stty echo      
@@ -21,7 +20,7 @@ tput civis
 
 
 stampa_banner() {
-cat << 'EOF' | lolcat -f #$LOLCAT -f
+cat << 'EOF' | $LOLCAT -f
  ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄   ▄▀▀▄▀▀▀▄  ▄▀▄▄▄▄   ▄▀▀▀▀▄   ▄▀▀█▄▄   ▄▀▀█▀▄   ▄▀▀▀▀▄  
 █   █   █ █      █ █   █   █ █ █    ▌ █      █ █ ▄▀   █ █   █  █ █      █ 
 ▐  █▀▀▀▀  █      █ ▐  █▀▀█▀  ▐ █      █      █ ▐ █    █ ▐   █  ▐ █      █ 
