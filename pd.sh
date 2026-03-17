@@ -1,28 +1,27 @@
 #!/bin/bash
 
-# 1. Setup ambiente e variabili
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
-LOLCAT="/home/linuxbrew/.linuxbrew/bin/lolcat"
+#MODIFICA I PATH CORRETTI QUI SOTTO SE NN DOVESSE FUNZIONARE.
+#DEVI RIMUOVERE I COMMENTI
 
-# 2. Funzione di ripristino
+#eval "$(/nfs/homes/$USER/.local/bin/brew shellenv bash)"
+#LOLCAT="/nfs/homes/$USER/.local/bin/lolcat"
+
 ripristina_terminale() {
-    stty echo      # Riattiva la tastiera
-    tput cnorm     # Mostra il cursore
+    stty echo      
+    tput cnorm     
     echo -e "\n\n"
     exit 0
 }
 
-# CORREZIONE: Aggiunto EXIT per ripristinare il terminale in qualsiasi caso di chiusura
 trap ripristina_terminale SIGINT EXIT
 
-# 3. SETUP INIZIALE
 clear              
-stty -echo         # Muta la tastiera
-tput civis         # Nasconde il cursore
+stty -echo         
+tput civis         
 
-# 4. Funzione di stampa
+
 stampa_banner() {
-cat << 'EOF' | $LOLCAT -f
+cat << 'EOF' | lolcat -f #$LOLCAT -f
  ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄   ▄▀▀▄▀▀▀▄  ▄▀▄▄▄▄   ▄▀▀▀▀▄   ▄▀▀█▄▄   ▄▀▀█▀▄   ▄▀▀▀▀▄  
 █   █   █ █      █ █   █   █ █ █    ▌ █      █ █ ▄▀   █ █   █  █ █      █ 
 ▐  █▀▀▀▀  █      █ ▐  █▀▀█▀  ▐ █      █      █ ▐ █    █ ▐   █  ▐ █      █ 
@@ -36,7 +35,6 @@ EOF
 
 stampa_banner 
 
-# Ciclo di ascolto
 while true; do
     if IFS= read -r -s -n 1 tasto; then
         if [[ "$tasto" == " " || -z "$tasto" ]]; then
