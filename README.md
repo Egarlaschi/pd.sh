@@ -46,4 +46,8 @@ quando avviato con "pd" lo script sta in modalita' bestemmie.
 con SPAZIO e ENTER puoi generare una nuova bestemmia a seconda di quanto
 sei infastidito.
 
+## Chiarimenti
+Se lolcat da errori modificare il file pd.sh
+al suo interno sono presenti maggiori informazioni
+
 per uscire dal programma, puoi usare CTRL-C
