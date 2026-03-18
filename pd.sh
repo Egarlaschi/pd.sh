@@ -41,3 +41,4 @@ while true; do
         fi
     fi
 done
+tput cnorm
