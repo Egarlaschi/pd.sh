@@ -47,7 +47,13 @@ con SPAZIO e ENTER puoi generare una nuova bestemmia a seconda di quanto
 sei infastidito.
 
 ## Chiarimenti
+### lolcat
 Se lolcat da errori modificare il file pd.sh
 al suo interno sono presenti maggiori informazioni
 
+### Uscire
 per uscire dal programma, puoi usare CTRL-C
+
+## Problemi
+### Il cursore del terminale scompare
+modifica pd.sh, rimuovi o commenta "tput civis" alla linea 19.
