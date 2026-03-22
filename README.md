@@ -5,7 +5,7 @@ script per bestemmiare silenziosamente nei cluster della 42
 
 
 ## Requisiti
-necessario lolcat per l'effetto colorato
+necessario lolcat per l'effetto colorato;
 sui computer del cluster puoi installarlo con
 ```bash
 pip install lolcat
